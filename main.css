@@ -1,0 +1,22 @@
+input, select
+{
+    width: 50%;
+    height: 25px;
+    margin: 5px;
+    font-size: 13pt;
+    border: none;
+    border-bottom: 2px solid purple;
+}
+select option
+{
+    font-size: 13pt;
+}
+form
+{
+    font-size: 13pt;
+}
+p
+{
+    font-size: 10pt;
+    color: red;
+}

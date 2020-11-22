@@ -1,0 +1,42 @@
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <html lang="fa" dir="rtl"></html>
+    <title>WD Assignment 2</title>
+    <script src="main.js"></script>
+    <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+   <form name="form" action="#" method="POST">
+        <b>عنوان</b>
+        <br/><select name="Title">
+            <option value="-1">انتخاب کنید ...</option>
+            <option value="0">خانم</option>
+            <option value="1">آقا</option>
+            <option value="2">غیره</option>
+        </select><br/>
+        <p id="error1"></p>
+        <b>نام (فارسی)</b><br/><input type="text" name="PR_Name"/><br/>
+        <p id="error2"></p>
+        <b>نام خانوادگی (فارسی)</b><br/><input type="text" name="PR_Family"/><br/>
+        <p id="error3"></p>
+        <b>نام و نام خانوادگی (انگلیسی)</b><br/><input type="text" name="EN_Name_Family"/><br/>
+        <p id="error4"></p>
+        <b>پست الکترونیکی </b><br/><input type="text" name="Email"/><br/>
+        <p id="error5"></p>
+        <b>شماره تلفن همراه </b><br/><input type="text" name="Phone" value="09"/>
+        <p id="error6"></p>
+        <b>کد ملی </b><br/><input type="text" name="SSN"/><br/>
+        <p id="error7"></p>
+
+        <!-- Age: <input type="text" name="uiAge" onkeypress="return isNumber(event)" /><br/>
+        Gender: <input type="radio" name="uiGender" value="male"> Male </input>
+                <input type="radio" name="uiGender" value="female"> Female </input><br/> -->
+
+
+        <br/><input type="submit" name="uiSubmit" onclick="return Validate_Form()" value="ثبت نام"/>
+   </form>
+
+
+</body>
+</html>
