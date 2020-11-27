@@ -1,10 +1,12 @@
 <html>
 <head>
+    <title>WP Assignment 2</title>
     <meta charset="utf-8"/>
     <html lang="fa" dir="rtl"></html>
-    <title>WD Assignment 2</title>
-    <script src="main.js"></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="Content-Language" content="fa" />
     <link rel="stylesheet" type="text/css" href="main.css">
+    <script src="main.js"></script>
 </head>
 <body>
    <form name="form" action="#" method="POST">
@@ -22,21 +24,33 @@
         <p id="error3"></p>
         <b>نام و نام خانوادگی (انگلیسی)</b><br/><input type="text" name="EN_Name_Family"/><br/>
         <p id="error4"></p>
-        <b>پست الکترونیکی </b><br/><input type="text" name="Email"/><br/>
+        <b>پست الکترونیکی</b><br/><input type="text" name="Email"/><br/>
         <p id="error5"></p>
-        <b>شماره تلفن همراه </b><br/><input type="text" name="Phone" value="09"/>
+        <b>شماره تلفن همراه</b><br/><input type="text" name="Phone" value="09"/>
         <p id="error6"></p>
-        <b>کد ملی </b><br/><input type="text" name="SSN"/><br/>
+        <b>کد ملی</b><br/><input type="text" name="SSN" placeholder="120-345678-9"/><br/>
         <p id="error7"></p>
-
-        <!-- Age: <input type="text" name="uiAge" onkeypress="return isNumber(event)" /><br/>
-        Gender: <input type="radio" name="uiGender" value="male"> Male </input>
-                <input type="radio" name="uiGender" value="female"> Female </input><br/> -->
-
-
+        <b>رمز عبور</b><br/><input type="text" name="Password"/><br/>
+        <p id="error8"></p>
+        <b>تکرار رمز عبور</b><br/><input type="text" name="RepPassword" onchange="Check_Pass()"/><br/>
+        <p id="error9"></p>
+        <b>آدرس</b><br/><input type="text" name="Address"/><br/>
+        <p id="error10"></p>
+        <b>تاریخ تولد</b><br/><input type="text" name="Birthday" placeholder="1388/08/08"/><br/>
+        <p id="error11"></p>
+        <b>وضعیت تاهل</b><br>
+        <div>
+            <input type="radio" name="Status" value="single"/>مجرد                
+            <input type="radio" name="Status" value="married"/>متاهل
+        </div>
+        <p id="error12"></p>
+        <fieldset>      
+            <legend><b>انتخاب علاقه‌مندی‌ها:</b></legend>      
+            <input type="checkbox" name="Interests" value="CN">شبکه‌های کامپیوتری<br>      
+            <input type="checkbox" name="Interests" value="ML">یادگیری ماشین<br>      
+            <input type="checkbox" name="Interests" value="NLP">پردازش زبان‌های طبیعی<br>           
+        </fieldset>
         <br/><input type="submit" name="uiSubmit" onclick="return Validate_Form()" value="ثبت نام"/>
    </form>
-
-
 </body>
 </html>

@@ -1,22 +1,60 @@
+@font-face 
+{
+    font-family:'BYekan'; /*تعریف یک نام برای فونت*/
+    src:url('font/BYekan.eot'); /*اکسپلورر 9 به بعد*/
+    src:local('bYekan'), /*بررسی نصب بودن فونت در سیستم کاربر*/
+        local('b Yekan'), /*برای برخی از مرورگرها مانند سافاری*/
+        url('font/BYekan.eot?#iefix') format('embedded-opentype'), /*هک برای اکسپلورر 8 و ماقبل*/
+        url('font/BYekan.woff') format('woff'), /*مرورگر های جدید*/
+        url('font/BYekan.ttf') format('truetype'), /*تمام مرورگرها به جزء اکسپلورر*/
+        url('font/BYekan.svg#BYekan') format('svg'); /*نسخه های قدیمی سیستم عامل iOS*/
+    font-style:normal;
+    font-weight:normal;
+    /*
+    reference: https://webgoo.ir/121/آموزش-استفاده-از-فونت-فارسی-در-وب-با-css
+    */
+}
 input, select
 {
     width: 50%;
     height: 25px;
-    margin: 5px;
+    margin: 2.5px;
     font-size: 13pt;
     border: none;
     border-bottom: 2px solid purple;
+    font-family: 'BYekan';
 }
 select option
 {
     font-size: 13pt;
+    font-family: 'BYekan';
 }
 form
 {
     font-size: 13pt;
+    font-family: 'BYekan';
 }
 p
 {
     font-size: 10pt;
+    font-family: 'BYekan';
     color: red;
+}
+div
+{
+    width: 50%;
+    border: 2px solid purple;
+    text-align: right;
+    padding-right: 0px;
+    display: inline-block;
+    vertical-align: middle;
+}
+fieldset
+{
+    width: 47.98%;
+    border: 2px solid purple;
+    margin-right: 0px;
+    /*
+    reference: https://html5-tutorial.net/forms/checkboxes/
+    */
 }
