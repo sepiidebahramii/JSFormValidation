@@ -1,2 +1,2 @@
 # WP-2
-Web Programming - Assignment 2 - From Validation
+Web Programming - Assignment 2 - Form Validation
