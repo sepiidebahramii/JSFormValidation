@@ -1,2 +1,2 @@
-# Course: Web Programming - Form Validation
+# Bachelor Course: Web Programming - Form Validation
 Form Validation with JS
