@@ -1,2 +1,2 @@
-# WP-2
-Web Programming - Assignment 2 - Form Validation
+# Course: Web Programming - Form Validation
+Form Validation with JS
